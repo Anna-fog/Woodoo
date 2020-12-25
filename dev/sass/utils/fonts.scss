@@ -1,0 +1,221 @@
+/*---------------------------------------------------------------FONTS---------------------------------------------------------------*/
+@font-face {
+	font-family: "montserat";
+	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+
+	src: 	url("../fonts/montserat/light/Montserrat-Light.woff2") format("woff2"),
+	url("../fonts/montserat/light/Montserrat-Light.woff") format("woff"),
+	url("../fonts/montserat/light/Montserrat-Light.ttf") format("truetype"),
+	url("../fonts/montserat/light/Montserrat-Light.eot"),
+	url("../fonts/montserat/light/Montserrat-Light.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "montserat";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+
+	src: 	url("../fonts/montserat/regular/Montserrat-Regular.woff2") format("woff2"),
+	url("../fonts/montserat/regular/Montserrat-Regular.woff") format("woff"),
+	url("../fonts/montserat/regular/Montserrat-Regular.ttf") format("truetype"),
+	url("../fonts/montserat/regular/Montserrat-Regular.eot"),
+	url("../fonts/montserat/regular/Montserrat-Regular.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "montserat";
+	font-style: normal;
+	font-weight: 500;
+	font-display: block;
+
+	src: 	url("../fonts/montserat/medium/Montserrat-Medium.woff2") format("woff2"),
+	url("../fonts/montserat/medium/Montserrat-Medium.woff") format("woff"),
+	url("../fonts/montserat/medium/Montserrat-Medium.ttf") format("truetype"),
+	url("../fonts/montserat/medium/Montserrat-Medium.eot"),
+	url("../fonts/montserat/medium/Montserrat-Medium.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "montserat";
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+
+	src: 	url("../fonts/montserat/semibold/Montserrat-SemiBold.woff2") format("woff2"),
+	url("../fonts/montserat/semibold/Montserrat-SemiBold.woff") format("woff"),
+	url("../fonts/montserat/semibold/Montserrat-SemiBold.ttf") format("truetype"),
+	url("../fonts/montserat/semibold/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/montserat/semibold/Montserrat-SemiBold.eot");
+}
+
+
+@font-face {
+	font-family: "montserat";
+	font-style: normal;
+	font-weight: bold;
+	font-display: block;
+
+	src: 	url("../fonts/montserat/bold/Montserrat-Bold.woff2") format("woff2"),
+	url("../fonts/montserat/bold/Montserrat-Bold.woff") format("woff"),
+	url("../fonts/montserat/bold/Montserrat-Bold.ttf") format("truetype"),
+	url("../fonts/montserat/bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/montserat/bold/Montserrat-Bold.eot");
+}
+
+
+///////////////////////LATO////////////////////////
+
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+
+	src: 	url("../fonts/lato/light/Lato-Light.woff2") format("woff2"),
+	url("../fonts/lato/light/Lato-Light.woff") format("woff"),
+	url("../fonts/lato/light/Lato-Light.ttf") format("truetype"),
+	url("../fonts/lato/light/Lato-Light.eot"),
+	url("../fonts/lato/light/Lato-Light.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+
+	src: 	url("../fonts/lato/regular/Lato-Regular.woff2") format("woff2"),
+	url("../fonts/lato/regular/Lato-Regular.woff") format("woff"),
+	url("../fonts/lato/regular/Lato-Regular.ttf") format("truetype"),
+	url("../fonts/lato/regular/Lato-Regular.eot"),
+	url("../fonts/lato/regular/Lato-Regular.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: bold;
+	font-display: block;
+
+	src: 	url("../fonts/lato/bold/Lato-Bold.woff2") format("woff2"),
+	url("../fonts/lato/bold/Lato-Bold.woff") format("woff"),
+	url("../fonts/lato/bold/Lato-Bold.ttf") format("truetype"),
+	url("../fonts/lato/bold/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/lato/bold/Lato-Bold.eot");
+}
+
+
+///////////////////////OLD-STANDARD////////////////////////
+
+@font-face {
+	font-family: "old-standard";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+
+	src: 	url("../fonts/old-standard/regular/OldStandardTT-Regular.woff2") format("woff2"),
+	url("../fonts/old-standard/regular/OldStandardTT-Regular.woff") format("woff"),
+	url("../fonts/old-standard/regular/OldStandardTT-Regular.ttf") format("truetype"),
+	url("../fonts/old-standard/regular/OldStandardTT-Regular.eot"),
+	url("../fonts/old-standard/regular/OldStandardTT-Regular.eot?#iefix") format("embedded-opentype");
+}
+
+
+///////////////////////RALEWAY////////////////////////
+
+@font-face {
+	font-family: "raleway";
+	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+
+	src: 	url("../fonts/raleway/light/Raleway-Light.woff2") format("woff2"),
+	url("../fonts/raleway/light/Raleway-Light.woff") format("woff"),
+	url("../fonts/raleway/light/Raleway-Light.ttf") format("truetype"),
+	url("../fonts/raleway/light/Raleway-Light.eot"),
+	url("../fonts/raleway/light/Raleway-Light.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+
+	src: 	url("../fonts/raleway/regular/Raleway-Regular.woff2") format("woff2"),
+	url("../fonts/raleway/regular/Raleway-Regular.woff") format("woff"),
+	url("../fonts/raleway/regular/Raleway-Regular.ttf") format("truetype"),
+	url("../fonts/raleway/regular/Raleway-Regular.eot"),
+	url("../fonts/raleway/regular/Raleway-Regular.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-display: block;
+
+	src: 	url("../fonts/raleway/medium/Raleway-Medium.woff2") format("woff2"),
+	url("../fonts/raleway/medium/Raleway-Medium.woff") format("woff"),
+	url("../fonts/raleway/medium/Raleway-Medium.ttf") format("truetype"),
+	url("../fonts/raleway/medium/Raleway-Medium.eot"),
+	url("../fonts/raleway/medium/Raleway-Medium.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+
+	src: 	url("../fonts/raleway/semibold/Raleway-SemiBold.woff2") format("woff2"),
+	url("../fonts/raleway/semibold/Raleway-SemiBold.woff") format("woff"),
+	url("../fonts/raleway/semibold/Raleway-SemiBold.ttf") format("truetype"),
+	url("../fonts/raleway/semibold/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/raleway/semibold/Raleway-SemiBold.eot");
+}
+
+///////////////////////WORK-SANS////////////////////////
+
+
+@font-face {
+	font-family: "work-sans";
+	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+
+	src: 	url("../fonts/work-sans/light/WorkSans-Light.woff2") format("woff2"),
+	url("../fonts/work-sans/light/WorkSans-Light.woff") format("woff"),
+	url("../fonts/work-sans/light/WorkSans-Light.ttf") format("truetype"),
+	url("../fonts/work-sans/light/WorkSans-Light.eot"),
+	url("../fonts/work-sans/light/WorkSans-Light.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "work-sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+
+	src: 	url("../fonts/work-sans/regular/WorkSans-Regular.woff2") format("woff2"),
+	url("../fonts/work-sans/regular/WorkSans-Regular.woff") format("woff"),
+	url("../fonts/work-sans/regular/WorkSans-Regular.ttf") format("truetype"),
+	url("../fonts/work-sans/regular/WorkSans-Regular.eot"),
+	url("../fonts/work-sans/regular/WorkSans-Regular.eot?#iefix") format("embedded-opentype");
+}
+
+@font-face {
+	font-family: "work-sans";
+	font-style: normal;
+	font-weight: 500;
+	font-display: block;
+
+	src: 	url("../fonts/work-sans/medium/WorkSans-Medium.woff2") format("woff2"),
+	url("../fonts/work-sans/medium/WorkSans-Medium.woff") format("woff"),
+	url("../fonts/work-sans/medium/WorkSans-Medium.ttf") format("truetype"),
+	url("../fonts/work-sans/medium/WorkSans-Medium.eot"),
+	url("../fonts/work-sans/medium/WorkSans-Medium.eot?#iefix") format("embedded-opentype");
+}

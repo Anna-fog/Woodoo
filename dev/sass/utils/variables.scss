@@ -1,0 +1,105 @@
+$font: "montserat";
+$fontSizeMain: 16;
+
+//COLOR
+$green: #379462;
+$bread: #4A6975;
+$text: #293B42;
+$gray: #789099;
+
+$beige: #F8F5F0;
+$dark-beige: #DBD5C9;
+$orange: #C06145;
+$black: #353434;
+
+
+
+
+.green {
+  color: $green;
+}
+.bread {
+  color: $bread;
+}
+.text {
+  color: $text;
+}
+.black {
+  color: $black;
+}
+.gray {
+  color: $gray;
+}
+
+
+//SIZE TO VW
+:root {
+  --vwIdth: 1920;
+  @include xmd-block() {
+    --vwIdth: 1100;
+  }
+  @include sm-block() {
+    --vwIdth: 800;
+  }
+  @include xxs-block() {
+    --vwIdth: 375;
+  }
+}
+
+
+//MEDIA CLASS
+.md-show {
+  display: none !important;
+}
+.xmd-show {
+  display: none !important;
+}
+.sm-show {
+  display: none !important;
+}
+.xs-show {
+  display: none !important;
+}
+.xxs-show {
+  display: none !important;
+}
+@include md-block() {
+  .md-show {
+    display: flex !important;
+  }
+  .md-hide {
+    display: none !important;
+  }
+}
+@include xmd-block() {
+  .xmd-show {
+    display: flex !important;
+  }
+  .xmd-hide {
+    display: none !important;
+  }
+}
+@include sm-block() {
+  .sm-show {
+    display: flex !important;
+  }
+  .sm-hide {
+    display: none !important;
+  }
+}
+@include xs-block() {
+  .xs-show {
+    display: flex !important;
+  }
+  .xs-hide {
+    display: none !important;
+  }
+}
+@include xxs-block() {
+  .xxs-show {
+    display: flex !important;
+  }
+  .xxs-hide {
+    display: none !important;
+  }
+}

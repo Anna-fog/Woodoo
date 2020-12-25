@@ -1,0 +1,69 @@
+.style-temp {
+  display: flex;
+  flex-wrap: wrap;
+
+  > li {
+    width: 100%;
+    border-top: 1px solid lightslategray;
+    border-right: 1px solid lightslategray;
+
+    > a, > span {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    li a {
+      background-color: rgba(0, 0, 0, 0.15);
+      padding-left: 35px;
+
+    }
+
+    a, span {
+      padding: 10px;
+      width: 100%;
+
+    }
+
+    ul {
+      box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .red {
+    background-color: red;
+
+    * {
+      color: #fff;
+    }
+  }
+
+  .green {
+    background-color: green;
+
+    * {
+      color: #fff;
+    }
+  }
+
+  .yel {
+    background-color: yellow;
+  }
+
+  .all {
+    width: 100%;
+
+    a {
+      background-color: orange;
+    }
+  }
+}
+
+.lazy:not(.loaded) {
+  max-width: toVw(40);
+  max-height: toVw(40);
+}
+
+.icon {
+  width: toVw(25);
+  height: toVw(25);
+}
+

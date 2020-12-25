@@ -1,0 +1,47 @@
+$grid-columns: 12;
+@for $i from 1 through $grid-columns {
+	.col-#{$i}{
+		width: percentage($i / $grid-columns);
+	}
+}
+
+// Стили
+body {
+	font-family: $font;
+	font-weight: 400;
+	overflow: visible;
+	overflow-x: hidden;
+	line-height: 160%;
+	font-size: toVw($fontSizeMain);
+	margin: 0;
+	color: $black;
+	&._overflow{
+		overflow: hidden;
+	}
+}
+main{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	transition: .2s;
+	color: #131313;
+}
+img{
+	max-width: 100%;
+}
+.tabs__content {
+	display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+	display: flex; /* по умолчанию показываем нужный блок */
+}
+
+
+.container{
+	width: toVw(1230);
+	margin: 0 auto;
+	position: relative;
+}

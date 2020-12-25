@@ -1,0 +1,41 @@
+.breadcrumbs{
+	font-size: 16px;
+	line-height: 120%;
+	color: #6C6C6C;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid gray;
+	padding: 10px 0;
+	span{
+		color: #EF4949;
+		text-transform: lowercase;
+	}
+	a{
+		transition: .3s;
+		span{
+			font-size: 16px;
+			line-height: 120%;
+			color: #6C6C6C;
+			position: relative;
+			padding-right: 20px;
+			&::before{
+				content: '';
+				width: 6px;
+				height: 6px;
+				border: 1.5px solid #C9C9C9;
+				border-radius: 50%;
+				position: absolute;
+				top: calc(50% - 3px);
+				right: 6px;
+				box-sizing: border-box;
+			}
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+}
+.bx-breadcrumb{
+	display: flex;
+	justify-content: center;
+}
