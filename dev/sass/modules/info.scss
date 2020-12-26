@@ -1,0 +1,65 @@
+.info {
+  background: linear-gradient(to right, $beige 70%, $dark-beige 30%);
+  padding-top: toVw(66);
+  padding-bottom: toVw(63);
+
+  &__title {
+    font-family: "lato";
+    font-weight: 300;
+    font-size: toVw(56);
+    line-height: toVw(67);
+  }
+
+  &__subtitle {
+    letter-spacing: 0.275em;
+    text-transform: uppercase;
+    font-size: toVw(14);
+    line-height: toVw(20);
+  }
+
+  &__promo {
+    display: flex;
+    justify-content: space-between;
+    width: toVw(830);
+    margin: 0 auto;
+  }
+
+  &__descr {
+    width: toVw(504);
+    font-size: toVw(14);
+    line-height: toVw(26);
+    letter-spacing: 0.02em;
+
+    &_expl {
+      width: toVw(568);
+      margin-top: toVw(17);
+    }
+  }
+
+  &__img {
+    width: toVw(830);
+    height: toVw(400);
+    display: flex;
+    justify-content: center;
+    margin: toVw(45) auto 0 auto;
+  }
+
+  &__explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: toVw(568);
+    margin: toVw(42) auto 0 auto;
+  }
+
+  &__name {
+    font-family: "work-sans";
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-size: toVw(16);
+    line-height: toVw(24);
+    font-weight: bold;
+  }
+
+
+}

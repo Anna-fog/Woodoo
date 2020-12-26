@@ -27,6 +27,30 @@
     text-transform: uppercase;
     margin-left: toVw(20);
     letter-spacing: 0.3em;
+    cursor: pointer;
+    &:hover {
+      &:after {
+        width: 95%;
+        transform: translateY(0);
+      }
+    }
+
+    &:first-child {
+      &:after {
+        width: 95%;
+        transform: translateY(0);
+      }
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      width: 0;
+      height: 1px;
+      background-color: $orange;
+      transform: translateY(7px);
+      transition: all .3s ease-out;
+    }
   }
 
   &__heading {
@@ -45,30 +69,25 @@
     font-size: toVw(18);
   }
 
-  &__btn {
-    margin-right: toVw(38);
-    font-family: "old-standard";
-    font-weight: 400;
-    font-size: toVw(12);
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    width: 147px;
-    height: 41px;
-    border: 1px solid $orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    a {
-      color: $orange;
-    }
+  &__heading {
+    margin-top: toVw(110);
   }
 
   &__title {
     font-family: "work-sans";
     font-weight: 100;
     font-size: toVw(140);
-    line-height: 100px;
+    line-height: toVw(133);
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: "lato";
+    font-weight: bold;
+    margin-top: toVw(25);
+    letter-spacing: 0.44em;
+    font-size: toVw(16);
   }
 
 

@@ -1,0 +1,52 @@
+.results {
+  background-color: $beige;
+  padding-top: toVw(63);
+  height: toVw(543);
+
+  background-image: url(../img/content/results_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+
+  &__title {
+    font-size: toVw(34);
+    font-family: "lato";
+    line-height: toVw(41);
+    display: flex;
+    justify-content: center;
+    margin-right: toVw(80);
+  }
+
+  &__wrapper {
+    height: toVw(240);
+    background: rgba(186, 80, 50, 0.9);
+    margin-top: toVw(31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    color: $beige;
+    margin-right: toVw(94);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__name {
+    font-family: "work-sans";
+    font-size: toVw(14);
+    line-height: toVw(17);
+    letter-spacing: 0.46em;
+    font-weight: 500;
+  }
+
+  &__descr {
+    margin-top: toVw(22);
+    width: toVw(270);
+    font-family: "lato";
+    font-size: toVw(14);
+    line-height: toVw(20);
+  }
+}

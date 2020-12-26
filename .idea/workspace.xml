@@ -11,26 +11,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ed854d0-796b-441f-9244-6f054261867d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Woodoo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/light/WorkSans-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ml-front-end_starter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/content/glow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/content/info_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/content/relief.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/content/results_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/content/vitality.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/svg/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/benefits.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/info.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/results.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/sass/modules/benefits.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/sass/modules/buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/sass/modules/info.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/sass/modules/results.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/modules/ms.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/ms.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/pages/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/sass/modules/ms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/modules/ms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/sass/utils/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/utils/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/sass/utils/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/utils/common.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Pug File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,10 +60,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/fonts/work-sans/thin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/img/svg" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Woodoo\dev\img\svg" />
+      <recent name="C:\Projects\Woodoo\dev\img\content" />
       <recent name="C:\Projects\Woodoo\dev\fonts\work-sans\thin" />
       <recent name="C:\Projects\Woodoo\dev\fonts\work-sans\light" />
     </key>
@@ -67,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608904920413</updated>
-      <workItem from="1608904924153" duration="3258000" />
+      <workItem from="1608904924153" duration="17109000" />
     </task>
     <servers />
   </component>
@@ -87,5 +100,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="989" y="392" key="Github.ShareDialog" timestamp="1608968645812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="989" y="392" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608968645812" />
+    <state x="793" y="247" key="run.anything.popup" timestamp="1608973137865">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="793" y="247" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608973137865" />
+    <state x="773" y="263" width="672" height="678" key="search.everywhere.popup" timestamp="1608967804138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="773" y="263" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608967804138" />
   </component>
 </project>

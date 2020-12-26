@@ -7,7 +7,7 @@ $grid-columns: 12;
 
 // Стили
 body {
-	font-family: $font;
+	font-family: "lato";
 	font-weight: 400;
 	overflow: visible;
 	overflow-x: hidden;
@@ -15,6 +15,9 @@ body {
 	font-size: toVw($fontSizeMain);
 	margin: 0;
 	color: $black;
+	//background-color: $orange;
+	background-color: #D4CEC2;
+
 	&._overflow{
 		overflow: hidden;
 	}

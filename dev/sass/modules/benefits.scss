@@ -1,0 +1,46 @@
+.benefits {
+  background: linear-gradient(to bottom, $dark-beige 60%, $beige 40%);
+  height: toVw(594);
+  padding-top: toVw(80);
+
+  &__title {
+    color: $orange;
+    font-size: toVw(44);
+    letter-spacing: -0.01em;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin-top: toVw(60);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: toVw(326);
+    height: toVw(235);
+    margin-right: toVw(25);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__name {
+    font-family: "work-sans";
+    font-size: toVw(14);
+    line-height: toVw(17);
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    margin-top: toVw(27);
+    font-weight: 500;
+  }
+
+  &__descr {
+    font-size: toVw(14);
+    line-height: toVw(20);
+    margin-top: toVw(15);
+  }
+
+
+}
