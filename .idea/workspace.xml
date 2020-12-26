@@ -1,57 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab3de03e-5749-4fbc-9d04-637d5ad03c31" name="Default Changelist" comment="" />
+    <list default="true" id="8ed854d0-796b-441f-9244-6f054261867d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Woodoo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/light/WorkSans-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/fonts/work-sans/thin/WorkSans-Thin.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ml-front-end_starter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/sass/modules/ms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/modules/ms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/sass/utils/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/utils/fonts.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Pug File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1WCg9KKrZksSBQQXFvVu3hoSBi7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1m9TgsWED3pGdGuBVqeGDIxuUHI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/fonts/old-stardart/regular" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/fonts/work-sans/thin" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\Woodoo\dev\fonts\lato\regular" />
-      <recent name="C:\Projects\Woodoo\dev\fonts\lato\light" />
-      <recent name="C:\Projects\Woodoo\dev\fonts\lato\bold" />
-      <recent name="W:\Project\ml-front-end_starter\dev\libs\libsMin" />
-      <recent name="W:\Progects\ml-front-end_starter\dev\libs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\Woodoo\dev\fonts\old-stardart\regular" />
-      <recent name="C:\Projects\Woodoo\dev\fonts\lato" />
-      <recent name="C:\Projects\Woodoo\dev\fonts\raleway\semibold" />
-      <recent name="C:\Projects\Woodoo\dev\fonts\raleway\regular" />
-      <recent name="C:\Projects\Woodoo\dev\fonts\raleway\medium" />
+      <recent name="C:\Projects\Woodoo\dev\fonts\work-sans\thin" />
+      <recent name="C:\Projects\Woodoo\dev\fonts\work-sans\light" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -59,24 +62,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ab3de03e-5749-4fbc-9d04-637d5ad03c31" name="Default Changelist" comment="" />
-      <created>1578658837013</created>
+      <changelist id="8ed854d0-796b-441f-9244-6f054261867d" name="Default Changelist" comment="" />
+      <created>1608904920413</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578658837013</updated>
-      <workItem from="1578658838079" duration="694000" />
-      <workItem from="1583738055666" duration="1180000" />
-      <workItem from="1584180757017" duration="168000" />
-      <workItem from="1588614115545" duration="1488000" />
-      <workItem from="1592467176062" duration="2984000" />
-      <workItem from="1595574520132" duration="193000" />
-      <workItem from="1598008144612" duration="1866000" />
-      <workItem from="1598427021838" duration="1882000" />
-      <workItem from="1598509043525" duration="142000" />
-      <workItem from="1603193385773" duration="416000" />
-      <workItem from="1607928469710" duration="2198000" />
-      <workItem from="1608133938793" duration="718000" />
-      <workItem from="1608895316114" duration="8615000" />
+      <updated>1608904920413</updated>
+      <workItem from="1608904924153" duration="3258000" />
     </task>
     <servers />
   </component>
@@ -93,12 +84,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1608898297550">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608898297550" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

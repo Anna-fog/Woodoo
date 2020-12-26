@@ -180,11 +180,24 @@
 
 ///////////////////////WORK-SANS////////////////////////
 
-
 @font-face {
 	font-family: "work-sans";
 	font-style: normal;
 	font-weight: 100;
+	font-display: block;
+
+	src: 	url("../fonts/work-sans/thin/WorkSans-Thin.woff2") format("woff2"),
+	url("../fonts/work-sans/thin/WorkSans-Thin.woff") format("woff"),
+	url("../fonts/work-sans/thin/WorkSans-Thin.ttf") format("truetype"),
+	url("../fonts/work-sans/thin/WorkSans-Thin.eot"),
+	url("../fonts/work-sans/thin/WorkSans-Thin.eot?#iefix") format("embedded-opentype");
+}
+
+
+@font-face {
+	font-family: "work-sans";
+	font-style: normal;
+	font-weight: 300;
 	font-display: block;
 
 	src: 	url("../fonts/work-sans/light/WorkSans-Light.woff2") format("woff2"),

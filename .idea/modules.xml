@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ml-front-end_starter.iml" filepath="$PROJECT_DIR$/.idea/ml-front-end_starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Woodoo.iml" filepath="$PROJECT_DIR$/.idea/Woodoo.iml" />
     </modules>
   </component>
 </project>

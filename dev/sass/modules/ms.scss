@@ -12,10 +12,21 @@
     display: flex;
     justify-content: space-between;
     z-index: 2;
+    align-items: center;
   }
 
   &__menu {
     display: flex;
+    padding-left: toVw(250);
+  }
+
+  &__menu-item {
+    font-family: "old-standard";
+    font-weight: 400;
+    font-size: toVw(12);
+    text-transform: uppercase;
+    margin-left: toVw(20);
+    letter-spacing: 0.3em;
   }
 
   &__heading {
@@ -30,11 +41,34 @@
     margin-left: toVw(90);
     font-family: "raleway";
     font-weight: 400;
-
+    text-transform: uppercase;
+    font-size: toVw(18);
   }
 
   &__btn {
     margin-right: toVw(38);
+    font-family: "old-standard";
+    font-weight: 400;
+    font-size: toVw(12);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    width: 147px;
+    height: 41px;
+    border: 1px solid $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: $orange;
+    }
+  }
+
+  &__title {
+    font-family: "work-sans";
+    font-weight: 100;
+    font-size: toVw(140);
+    line-height: 100px;
   }
 
 
