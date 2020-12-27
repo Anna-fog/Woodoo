@@ -6,15 +6,15 @@
   &__title {
     font-family: "lato";
     font-weight: 300;
-    font-size: toVw(56);
-    line-height: toVw(67);
+    font-size: 56px;
+    line-height: 67px;
   }
 
   &__subtitle {
     letter-spacing: 0.275em;
     text-transform: uppercase;
-    font-size: toVw(14);
-    line-height: toVw(20);
+    font-size: 14px;
+    line-height: 20px;
   }
 
   &__promo {
@@ -26,8 +26,8 @@
 
   &__descr {
     width: toVw(504);
-    font-size: toVw(14);
-    line-height: toVw(26);
+    font-size: 14px;
+    line-height: 26px;
     letter-spacing: 0.02em;
 
     &_expl {
@@ -56,8 +56,8 @@
     font-family: "work-sans";
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    font-size: toVw(16);
-    line-height: toVw(24);
+    font-size: 16px;
+    line-height: 24px;
     font-weight: bold;
   }
 

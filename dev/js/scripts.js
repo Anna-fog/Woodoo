@@ -23,7 +23,7 @@ $(document).ready(function(){
 	}
 
 
-	//Клик в не блока
+	//Клик вне блока
 	// $(document).mouseup(function (e){
 	// 	var div = $(БЛОК);
 	// 	if (!div.is(e.target)

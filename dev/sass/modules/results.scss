@@ -11,7 +11,7 @@
   &__title {
     font-size: toVw(34);
     font-family: "lato";
-    line-height: toVw(41);
+    line-height: 41px;
     display: flex;
     justify-content: center;
     margin-right: toVw(80);
@@ -36,8 +36,8 @@
 
   &__name {
     font-family: "work-sans";
-    font-size: toVw(14);
-    line-height: toVw(17);
+    font-size: 14px;
+    line-height: 17px;
     letter-spacing: 0.46em;
     font-weight: 500;
   }
@@ -46,7 +46,7 @@
     margin-top: toVw(22);
     width: toVw(270);
     font-family: "lato";
-    font-size: toVw(14);
-    line-height: toVw(20);
+    font-size: 14px;
+    line-height: 20px;
   }
 }

@@ -1,38 +1,39 @@
 $(document).ready(function () {
 
-	if ($('.styler').length) {
-		$('.styler').styler({
-			onFormStyled: function () {
-				selectLoadImages();
-			}
-		});
-	}
-
-	$('.js-ajax-popup').magnificPopup({
-		type: 'ajax',
-		callbacks: {
-			ajaxContentAdded: function () {
-				if ($('.styler').length) $('.styler').styler({
-					onFormStyled: function () {
-						selectLoadImages();
-						fileListcontroll();
-					}
-				});
-				datePicker();
-				keyup_form();
-				click_submit();
-			}
-		}
-	});
-
-	$('.js-inline-popup').magnificPopup({
-		type: 'inline',
-		callbacks: {
-			beforeOpen: function () {
-				console.log('Start of popup initialization');
-			}
-		}
-	});
+	//
+	// if ($('.styler').length) {
+	// 	$('.styler').styler({
+	// 		onFormStyled: function () {
+	// 			selectLoadImages();
+	// 		}
+	// 	});
+	// }
+	//
+	// $('.js-ajax-popup').magnificPopup({
+	// 	type: 'ajax',
+	// 	callbacks: {
+	// 		ajaxContentAdded: function () {
+	// 			if ($('.styler').length) $('.styler').styler({
+	// 				onFormStyled: function () {
+	// 					selectLoadImages();
+	// 					fileListcontroll();
+	// 				}
+	// 			});
+	// 			datePicker();
+	// 			keyup_form();
+	// 			click_submit();
+	// 		}
+	// 	}
+	// });
+	//
+	// $('.js-inline-popup').magnificPopup({
+	// 	type: 'inline',
+	// 	callbacks: {
+	// 		beforeOpen: function () {
+	// 			console.log('Start of popup initialization');
+	// 		}
+	// 	}
+	// });
 
 	datePicker();
 	fileListcontroll();
@@ -91,6 +92,8 @@ $(document).ready(function () {
 	});
 
 });
+
+
 
 //Вывод текста ошибка ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function popupForm_error($this, count) {
@@ -557,6 +560,7 @@ function fileQuantity(object) {
 //Функция сабмита +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function click_submit() {
 	$('body').on('click', '.required--sbmt', function (e) {
+
 		let $this = $(this),
 			$thisForm = $this.closest('form'),
 			Errorcount = 0;
@@ -585,10 +589,11 @@ function click_submit() {
 			inputRequired.each(function () {
 				let inputValue = $(this).val();
 				let $this = $(this);
-				if (inputValue == '') {
+
+				if (inputValue === '') {
 					$this.closest('div').removeClass('success').addClass('error');
 					Errorcount++;
-				} else if (!inputValue == '' && $this.closest('div').hasClass('error') && !$this.closest('div').hasClass('error-online')) {
+				} else if (!inputValue === '' && $this.closest('div').hasClass('error') && !$this.closest('div').hasClass('error-online')) {
 					$this.closest('div').removeClass('error').addClass('success');
 				}
 			});
@@ -619,10 +624,10 @@ function click_submit() {
 			}
 		})
 
-		// Пhоверка поля с email +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-		let emailtRequired = $thisForm.find('.required--email input');
-		if (emailtRequired.length) {
-			emailtRequired.each(function () {
+		// Проверка поля с email +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		let emailRequired = $thisForm.find('.required--email input');
+		if (emailRequired.length) {
+			emailRequired.each(function () {
 				let inputValue = $(this).val();
 				let $this = $(this);
 
@@ -630,11 +635,11 @@ function click_submit() {
 					$this.closest('div').removeClass('success').addClass('error');
 					Errorcount++;
 				}
-				else if (inputValue == '') {
+				else if (inputValue === '') {
 					$this.closest('div').removeClass('success').addClass('error');
 					Errorcount++;
 				}
-				else if (!inputValue == '' && $this.closest('div').hasClass('error') && !$this.closest('div').hasClass('error-online')) {
+				else if (!inputValue === '' && $this.closest('div').hasClass('error') && !$this.closest('div').hasClass('error-online')) {
 					$this.closest('div').removeClass('error').addClass('success');
 				}
 			});

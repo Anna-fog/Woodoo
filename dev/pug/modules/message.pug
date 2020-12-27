@@ -1,15 +1,19 @@
 .container
     .message
         .message__bg
-            .form
+            .form-wrapper
                 h2.message__title Reservation
                 .message__info SEND US A MESSAGE
 
-                input(placeholder="Your Name" name="name").message__input
-                input(placeholder="Your E-mail" name="e-mail").message__input.required--email.input
-                input(placeholder="Your Message" name="message").message__input
+                form.form-reservation
+                    .required--input.message__input
+                        input(placeholder="Your Name" type="text")
+                    .required--email.required--input.message__input
+                        input(placeholder="Your E-mail" type="email")
+                    .required--input.message__input
+                        input(placeholder="Your Message" type="text")
 
-                button.btn-form Send
+                    button.btn-form.required--sbmt Send
 
             .message__social
                 .message__icon

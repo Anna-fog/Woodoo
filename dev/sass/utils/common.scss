@@ -47,4 +47,18 @@ img{
 	width: toVw(1230);
 	margin: 0 auto;
 	position: relative;
+
+	@include lg-block() {
+		width: 1180px;
+	}
+
+	@include md-block() {
+		width: 1100px;
+	}
+
+
+}
+
+.error {
+	border-color: #ea5353 !important;
 }

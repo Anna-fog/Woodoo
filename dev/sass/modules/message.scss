@@ -6,29 +6,29 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
-    height: toVw(530);
+    min-height: 530px;
     padding-top: toVw(70);
   }
 
   &__title {
     letter-spacing: 0.03em;
-    font-size: toVw(34);
-    line-height: toVw(41);
+    font-size: 34px;
+    line-height: 41px;
     color: $orange;
     margin-bottom: 5px;
   }
 
   &__info {
     letter-spacing: 0.59em;
-    font-size: toVw(10);
-    line-height: toVw(20);
+    font-size: 10px;
+    line-height: 20px;
     text-transform: uppercase;
     font-family: "work-sans";
     font-weight: bold;
     margin-bottom: toVw(20);
   }
 
-  .form {
+  .form-wrapper {
     margin-left: toVw(130);
   }
 
@@ -36,11 +36,11 @@
     margin-top: toVw(15);
     padding-bottom: toVw(5);
     width: toVw(467);
-    height: toVw(30);
+    height: toVw(25);
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.45);
     font-family: "work-sans";
-    font-size: toVw(10);
+    font-size: 10px;
     color: rgba(45, 54, 63, 0.45);
   }
 
@@ -66,7 +66,7 @@
 
   &__copyright {
     font-family: "work-sans";
-    font-size: toVw(10);
+    font-size: 10px;
     color: rgba(45, 54, 63, 0.49);
     display: flex;
     justify-content: center;
@@ -76,6 +76,7 @@
     margin-top: toVw(17);
     &:before {
       content: url("../img/svg/copyright.svg");
+      margin-right: toVw(5);
     }
   }
 

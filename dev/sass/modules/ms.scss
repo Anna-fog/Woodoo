@@ -1,7 +1,7 @@
 .ms {
   background-color: $beige;
   padding-bottom: toVw(140);
-  height: toVw(607);
+  min-height: 607px;
 
   background-image: url(../img/content/ms_bg.png);
   background-size: contain;
@@ -23,7 +23,7 @@
   &__menu-item {
     font-family: "old-standard";
     font-weight: 400;
-    font-size: toVw(12);
+    font-size: 12px;
     text-transform: uppercase;
     margin-left: toVw(20);
     letter-spacing: 0.3em;
@@ -66,7 +66,7 @@
     font-family: "raleway";
     font-weight: 400;
     text-transform: uppercase;
-    font-size: toVw(18);
+    font-size: 18px;
   }
 
 
@@ -77,8 +77,8 @@
   &__title {
     font-family: "work-sans";
     font-weight: 100;
-    font-size: toVw(140);
-    line-height: toVw(133);
+    font-size: 140px;
+    line-height: 133px;
     text-transform: uppercase;
   }
 
@@ -87,7 +87,7 @@
     font-weight: bold;
     margin-top: toVw(25);
     letter-spacing: 0.44em;
-    font-size: toVw(16);
+    font-size: 16px;
   }
 
 
