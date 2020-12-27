@@ -56,6 +56,11 @@ img{
 		width: 1100px;
 	}
 
+	@include xmd-block() {
+		width: 990px;
+		overflow: hidden;
+	}
+
 
 }
 

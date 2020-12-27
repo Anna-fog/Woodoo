@@ -30,6 +30,10 @@
     @include md-block() {
       width: toVw(1100);
     }
+
+    @include xmd-block() {
+      width: 910px;
+    }
   }
 
   &__descr {
@@ -49,6 +53,10 @@
       @include lg-block() {
         width: toVw(750);
       }
+
+      @include xmd-block() {
+        width: toVw(600);
+      }
     }
   }
 
@@ -67,6 +75,10 @@
     @include md-block() {
       width: toVw(1100);
     }
+
+    @include md-block() {
+      width: 910px;
+    }
   }
 
   &__explanation {
@@ -78,6 +90,10 @@
 
     @include lg-block() {
       width: toVw(700);
+    }
+
+    @include md-block() {
+      width: toVw(600);
     }
   }
 

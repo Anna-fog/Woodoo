@@ -12,6 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8ed854d0-796b-441f-9244-6f054261867d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/img/content/glow.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/img/content/glow.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/sass/modules/benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/modules/benefits.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/sass/modules/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/modules/buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/sass/modules/info.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/modules/info.scss" afterDir="false" />
@@ -49,15 +51,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/img/svg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/img/content" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\Woodoo\dev\sass\modules" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\Woodoo\dev\img\svg" />
       <recent name="C:\Projects\Woodoo\dev\img\content" />
+      <recent name="C:\Projects\Woodoo\dev\img\svg" />
       <recent name="C:\Projects\Woodoo\dev\fonts\work-sans\thin" />
       <recent name="C:\Projects\Woodoo\dev\fonts\work-sans\light" />
     </key>
@@ -72,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608904920413</updated>
-      <workItem from="1608904924153" duration="46143000" />
+      <workItem from="1608904924153" duration="52974000" />
     </task>
     <servers />
   </component>

@@ -13,6 +13,10 @@
     padding-top: toVw(80);
   }
 
+  @include xmd-block() {
+    min-height: toVw(600);
+  }
+
   &__title {
     font-size: 34px;
     font-family: "lato";
@@ -28,7 +32,11 @@
     @include md-block() {
       font-size: 32px;
       margin-right: toVw(140);
+    }
 
+    @include xmd-block() {
+      font-size: 30px;
+      margin-right: 0;
     }
   }
 
@@ -45,6 +53,10 @@
       min-height: toVw(400);
       padding-top: toVw(80);
     }
+
+    @include xmd-block() {
+      min-height: toVw(300);
+    }
   }
 
   &__item {
@@ -52,6 +64,10 @@
     margin-right: toVw(94);
     &:last-child {
       margin-right: 0;
+    }
+
+    @include xmd-block() {
+      margin-right: 70px;
     }
   }
 
@@ -61,6 +77,11 @@
     line-height: 17px;
     letter-spacing: 0.46em;
     font-weight: 500;
+    width: auto;
+
+    @include xmd-block() {
+      width: toVw(220);
+    }
   }
 
   &__descr {
@@ -72,6 +93,10 @@
 
     @include md-block() {
       width: toVw(350);
+    }
+
+    @include xmd-block() {
+      width: toVw(220);
     }
   }
 }

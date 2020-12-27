@@ -15,6 +15,11 @@
     min-height: toVw(900);
   }
 
+  @include xmd-block() {
+    min-height: toVw(537);
+    padding-bottom: 0;
+  }
+
   &__upper {
     padding-top: toVw(25);
     display: flex;
@@ -26,6 +31,10 @@
   &__menu {
     display: flex;
     padding-left: toVw(250);
+
+    @include xmd-block() {
+      padding-left: toVw(10);
+    }
   }
 
   &__menu-item {
@@ -45,6 +54,10 @@
 
     @include md-block() {
       margin-left: toVw(35);
+    }
+
+    @include xmd-block() {
+      margin-left: 20px;
     }
 
     &:first-child {
@@ -70,6 +83,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: toVw(490);
+    margin-top: toVw(110);
     z-index: 2;
 
     @include lg-block() {
@@ -79,6 +93,10 @@
     @include md-block() {
       padding-left: toVw(700);
     }
+
+    @include xmd-block() {
+      padding-left: 450px;
+    }
   }
 
   &__logo {
@@ -87,12 +105,12 @@
     font-weight: 400;
     text-transform: uppercase;
     font-size: 18px;
+
+    @include xmd-block() {
+      margin-left: toVw(50);
+    }
   }
 
-
-  &__heading {
-    margin-top: toVw(110);
-  }
 
   &__title {
     font-family: "work-sans";
@@ -103,6 +121,11 @@
 
     @include md-block() {
       font-size: toVw(160);
+    }
+
+    @include xmd-block() {
+      font-size: 100px;
+      line-height: 88px;
     }
   }
 
