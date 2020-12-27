@@ -49,3 +49,27 @@
 
   }
 }
+
+.btn-form {
+  margin-top: toVw(20);
+  border: 1px solid #2D363F;
+  width: toVw(97);
+  height: toVw(28);
+  font-size: toVw(10);
+  line-height: toVw(20);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s ease-out all;
+
+
+  &:hover {
+    border: 1px solid $orange;
+    background-color: $orange;
+    color: $beige;
+
+  }
+
+}

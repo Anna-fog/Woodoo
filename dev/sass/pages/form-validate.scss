@@ -117,7 +117,7 @@
 // 		}
 
 // 		.password-first {
-// 			&.succes {
+// 			&.success{
 // 				.fv__block-error {
 // 					display: none !important;
 // 				}
@@ -237,22 +237,22 @@
 
 // 	}
 
-// 	.succes {
+// 	.success{
 
 // 		span {
-// 			color: $succes-color;
+// 			color: $success-color;
 // 		}
 
 // 		input {
-// 			color: $succes-color;
-// 			border-color: $succes-color;
+// 			color: $success-color;
+// 			border-color: $success-color;
 // 		}
 
 // 		.jq-selectbox__select {
-// 			border-color: $succes-color;
+// 			border-color: $success-color;
 // 		}
 
-// 		.fv__block-succes {
+// 		.fv__block-success{
 // 			display: block;
 // 			color: green;
 // 		}
@@ -268,7 +268,7 @@
 
 // 	.fv__block-error,
 // 	.fv__block-not-equally,
-// 	.fv__block-succes {
+// 	.fv__block-success{
 // 		display: none;
 // 	}
 

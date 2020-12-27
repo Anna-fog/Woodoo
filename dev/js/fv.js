@@ -115,9 +115,9 @@ function required_input() {
 				var inputLenght = 3;
 			}
 			if (input.length > inputLenght) {
-				$(this).closest('div').removeClass('error error-online').addClass('succes');
+				$(this).closest('div').removeClass('error error-online').addClass('success');
 			} else {
-				$(this).closest('div').removeClass('succes').addClass('error-online');
+				$(this).closest('div').removeClass('success').addClass('error-online');
 			}
 		}
 	});
@@ -135,9 +135,9 @@ function required_textarea() {
 			textareaLenght = 3;
 		}
 		if (textarea.length > textareaLenght) {
-			$(this).closest('div').removeClass('error error-online').addClass('succes');
+			$(this).closest('div').removeClass('error error-online').addClass('success');
 		} else {
-			$(this).closest('div').removeClass('succes').addClass('error-online');
+			$(this).closest('div').removeClass('success').addClass('error-online');
 		}
 	});
 }
@@ -152,9 +152,9 @@ function num_inset() {
 }
 
 //Проверка ввода пароля (первый шаг)++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let firstPasswordSucces = 0,
+let firstPasswordsuccess = 0,
 	firstPasswordValue = 0,
-	secondPasswordSucces = 0,
+	secondPasswordsuccess = 0,
 	secondPasswordValue = 0;
 
 function first_password() {
@@ -168,37 +168,37 @@ function first_password() {
 
 		if (secondPasswordValue > 0) {
 			if (this.value.length >= 4 && this.value.length <= 8 && this.value === secondPasswordValue) {
-				firstPasswordSucces = true;
-				secondPasswordSucces = true;
+				firstPasswordsuccess = true;
+				secondPasswordsuccess = true;
 
-				mainBlock.removeClass('error error-online').addClass('succes');
-				secondPassword.removeClass('error error-online not-equally').addClass('succes');
-				innerBlock.removeClass('error error-online not-equally').addClass('succes');
+				mainBlock.removeClass('error error-online').addClass('success');
+				secondPassword.removeClass('error error-online not-equally').addClass('success');
+				innerBlock.removeClass('error error-online not-equally').addClass('success');
 			}
 			else if (this.value.length >= 4 && this.value.length <= 8 && this.value !== secondPasswordValue) {
-				firstPasswordSucces = false;
-				innerBlock.removeClass('succes error error-online').addClass('not-equally');
-				mainBlock.removeClass('succes').addClass('error-online');
+				firstPasswordsuccess = false;
+				innerBlock.removeClass('success error error-online').addClass('not-equally');
+				mainBlock.removeClass('success').addClass('error-online');
 			}
 			else if (this.value.length < 4 || this.value.length > 8) {
-				firstPasswordSucces = false;
-				innerBlock.removeClass('succes error not-equally').addClass('error-online');
-				mainBlock.removeClass('succes').addClass('error-online');
+				firstPasswordsuccess = false;
+				innerBlock.removeClass('success error not-equally').addClass('error-online');
+				mainBlock.removeClass('success').addClass('error-online');
 			}
 			else { }
 		}
 		else {
 			if (this.value.length >= 4 && this.value.length <= 8) {
-				firstPasswordSucces = true;
-				innerBlock.removeClass('error error-online').addClass('succes');
+				firstPasswordsuccess = true;
+				innerBlock.removeClass('error error-online').addClass('success');
 				secondPassword.addClass('show');
-				mainBlock.removeClass('succes').addClass('error-online');
+				mainBlock.removeClass('success').addClass('error-online');
 			}
 			else {
-				firstPasswordSucces = false;
-				innerBlock.removeClass('succes').addClass('error-online');
+				firstPasswordsuccess = false;
+				innerBlock.removeClass('success').addClass('error-online');
 				secondPassword.removeClass('show');
-				mainBlock.removeClass('succes').addClass('error-online');
+				mainBlock.removeClass('success').addClass('error-online');
 			}
 		}
 
@@ -215,21 +215,21 @@ function second_password() {
 			innerBlock = $(this).closest('div');
 
 		if (this.value.length >= 4 && this.value.length <= 8 && this.value === firstPasswordValue) {
-			secondPasswordSucces = true;
-			firstPasswordSucces = true;
-			mainBlock.find('.password-first').removeClass('error error-online not-equally').addClass('succes');
-			innerBlock.removeClass('error error-online not-equally').addClass('succes');
-			mainBlock.removeClass('error error-online').addClass('succes');
+			secondPasswordsuccess = true;
+			firstPasswordsuccess = true;
+			mainBlock.find('.password-first').removeClass('error error-online not-equally').addClass('success');
+			innerBlock.removeClass('error error-online not-equally').addClass('success');
+			mainBlock.removeClass('error error-online').addClass('success');
 		}
 		else if (this.value.length >= 4 && this.value.length <= 8 && this.value !== firstPasswordValue) {
-			secondPasswordSucces = false;
-			innerBlock.removeClass('succes error error-online').addClass('not-equally');
-			mainBlock.removeClass('error succes').addClass('error-online');
+			secondPasswordsuccess = false;
+			innerBlock.removeClass('success error error-online').addClass('not-equally');
+			mainBlock.removeClass('error success').addClass('error-online');
 		}
 		else if (this.value.length < 4 || this.value.length > 8) {
-			secondPasswordSucces = false;
-			innerBlock.removeClass('error succes not-equally').addClass('error-online');
-			mainBlock.removeClass('succes').addClass('error-online');
+			secondPasswordsuccess = false;
+			innerBlock.removeClass('error success not-equally').addClass('error-online');
+			mainBlock.removeClass('success').addClass('error-online');
 		}
 		else { }
 
@@ -249,13 +249,13 @@ function inputMask() {
 		if (($thisPlaceholder == '' || !$thisPlaceholder)) {
 			$this.inputmask("" + $thisMask + "", {
 				oncomplete: function () {
-					$(this).closest('.input--mask').removeClass('error error-online').addClass('succes')
+					$(this).closest('.input--mask').removeClass('error error-online').addClass('success')
 				},
 				oncleared: function () {
-					$(this).closest('.input--mask').removeClass('succes').addClass('error-online');
+					$(this).closest('.input--mask').removeClass('success').addClass('error-online');
 				},
 				onincomplete: function oncomplete() {
-					$(this).closest('.input--mask').removeClass('succes').addClass('error-online');
+					$(this).closest('.input--mask').removeClass('success').addClass('error-online');
 				},
 				onKeyValidation: function (key, result) {
 					console.log('onKeyValidation');
@@ -270,13 +270,13 @@ function inputMask() {
 			$this.inputmask("" + $thisMask + "", {
 				placeholder: "" + $thisPlaceholder + "",
 				oncomplete: function () {
-					$(this).closest('.input--mask').removeClass('error error-online').addClass('succes')
+					$(this).closest('.input--mask').removeClass('error error-online').addClass('success')
 				},
 				oncleared: function () {
-					$(this).closest('.input--mask').removeClass('succes').addClass('error-online');
+					$(this).closest('.input--mask').removeClass('success').addClass('error-online');
 				},
 				onincomplete: function oncomplete() {
-					$(this).closest('.input--mask').removeClass('succes').addClass('error-online');
+					$(this).closest('.input--mask').removeClass('success').addClass('error-online');
 				},
 				onKeyValidation: function (key, result) {
 					console.log('onKeyValidation');
@@ -293,10 +293,10 @@ function required_date() {
 		let thisDateBlock = $(this).closest('.required--date');
 
 		if ($(this).val() != '') {
-			thisDateBlock.removeClass('error error-online').addClass('succes')
+			thisDateBlock.removeClass('error error-online').addClass('success')
 		}
 		else {
-			thisDateBlock.remove('succes').addClass('error-online')
+			thisDateBlock.remove('success').addClass('error-online')
 		}
 	});
 }
@@ -308,11 +308,11 @@ function required_email() {
 			emailDiv = $(this).closest('div');
 
 		if (email.length >= 0 && (email.match(/[a-z0-9]\@.+[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}/g) || []).length !== 1) {
-			emailDiv.removeClass('succes').addClass('error-online');
-		} else if (email == '') {
-			emailDiv.removeClass('error error-online').addClass('succes');
+			emailDiv.removeClass('success').addClass('error-online');
+		} else if (email === '') {
+			emailDiv.removeClass('error error-online').addClass('sucses');
 		} else {
-			emailDiv.removeClass('error error-online').addClass('succes')
+			emailDiv.removeClass('error error-online').addClass('success')
 		}
 	});
 }
@@ -328,11 +328,11 @@ function emailInputControl() {
 		}
 		else if (email.length > 0 && (email.match(/[a-z0-9]\@.+[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}/g) || []).length !== 1 && $(this).closest('div').hasClass('error-online')) return
 		else if (email.length === 0) {
-			emailDiv.removeClass('error-online error required--email succes');
+			emailDiv.removeClass('error-online error required--email success');
 			emailDiv.find('.email-input-error-text').remove();
 		}
 		else {
-			emailDiv.removeClass('error-online error required--email').addClass('succes');
+			emailDiv.removeClass('error-online error required--email').addClass('success');
 			emailDiv.find('.email-input-error-text').remove();
 		}
 	});
@@ -342,7 +342,7 @@ function emailInputControl() {
 function radioChange() {
 	$(document).on('change', '.radio--required :radio', function () {
 		let radiolDiv = $(this).closest('.radio--required');
-		radiolDiv.removeClass('error').addClass('succes');
+		radiolDiv.removeClass('error').addClass('success');
 	});
 }
 
@@ -353,10 +353,10 @@ function selectChange() {
 			selectDiv = $(this).closest('.required--select');
 
 		if (val === 'Not selected') {
-			selectDiv.removeClass('succes').addClass('error')
+			selectDiv.removeClass('success').addClass('error')
 			return false
 		} else {
-			selectDiv.removeClass('error').addClass('succes')
+			selectDiv.removeClass('error').addClass('success')
 		}
 	});
 }
@@ -368,10 +368,10 @@ function checkChange() {
 			checkDiv = $(this).closest('.required--check');
 
 		if (val) {
-			checkDiv.removeClass('error').addClass('succes')
+			checkDiv.removeClass('error').addClass('success')
 			$(this).closest('label').siblings().find(':checkbox').prop('checked', false)
 		} else {
-			checkDiv.removeClass('succes').addClass('error')
+			checkDiv.removeClass('success').addClass('error')
 		}
 		checkDiv.find('.styler').trigger('refresh')
 	});
@@ -384,10 +384,10 @@ function checkMoreChange() {
 			checkDiv = $(this).closest('.check-more');
 
 		if (val) {
-			checkDiv.removeClass('error').addClass('succes')
+			checkDiv.removeClass('error').addClass('success')
 		}
 		else if (!$('.check-more :checked').length) {
-			checkDiv.removeClass('succes').addClass('error');
+			checkDiv.removeClass('success').addClass('error');
 		}
 	});
 }
@@ -399,9 +399,9 @@ function fileChange() {
 			fileDiv = $(this).closest('.required--file');
 
 		if (val === "") {
-			fileDiv.removeClass('succes').addClass('error')
+			fileDiv.removeClass('success').addClass('error')
 		} else {
-			fileDiv.removeClass('error').addClass('succes')
+			fileDiv.removeClass('error').addClass('success')
 		}
 	});
 }
@@ -414,9 +414,9 @@ function fileChangeMultiple() {
 			max = fileDiv.attr('data-max');
 
 		if (val > max || val == 0) {
-			fileDiv.removeClass('succes').addClass('error')
+			fileDiv.removeClass('success').addClass('error')
 		} else {
-			fileDiv.removeClass('error').addClass('succes')
+			fileDiv.removeClass('error').addClass('success')
 		}
 	});
 }
@@ -548,9 +548,9 @@ function fileListcontroll() {
 function fileQuantity(object) {
 	let length = $('.input-file-list p').length;
 	if (Object.keys(object).length > $('.required--file--multiple').attr('data-max') || Object.keys(object).length == 0) {
-		$('.required--file--multiple').removeClass('succes').addClass('error');
+		$('.required--file--multiple').removeClass('success').addClass('error');
 	} else {
-		$('.required--file--multiple').removeClass('error').addClass('succes');
+		$('.required--file--multiple').removeClass('error').addClass('success');
 	}
 }
 
@@ -567,12 +567,12 @@ function click_submit() {
 			passwordSecond = passwordRequired.find('.password-second');
 
 		if (passwordRequired.length) {
-			if (passwordFirst.hasClass('succes') && passwordSecond.hasClass('succes')) {
-				passwordRequired.removeClass('error').addClass('succes');
+			if (passwordFirst.hasClass('success') && passwordSecond.hasClass('success')) {
+				passwordRequired.removeClass('error').addClass('success');
 
 			}
 			else {
-				passwordRequired.removeClass('succes error-online').addClass('error')
+				passwordRequired.removeClass('success error-online').addClass('error')
 				Errorcount++;
 			}
 		}
@@ -586,10 +586,10 @@ function click_submit() {
 				let inputValue = $(this).val();
 				let $this = $(this);
 				if (inputValue == '') {
-					$this.closest('div').removeClass('succes').addClass('error');
+					$this.closest('div').removeClass('success').addClass('error');
 					Errorcount++;
 				} else if (!inputValue == '' && $this.closest('div').hasClass('error') && !$this.closest('div').hasClass('error-online')) {
-					$this.closest('div').removeClass('error').addClass('succes');
+					$this.closest('div').removeClass('error').addClass('success');
 				}
 			});
 		}
@@ -602,10 +602,10 @@ function click_submit() {
 				let inputValue = $(this).val();
 				let $this = $(this);
 				if (inputValue == '') {
-					$this.closest('div').removeClass('succes').addClass('error');
+					$this.closest('div').removeClass('success').addClass('error');
 					Errorcount++;
 				} else if (!inputValue == '' && $this.closest('div').hasClass('error') && !$this.closest('div').hasClass('error-online')) {
-					$this.closest('div').removeClass('error').addClass('succes');
+					$this.closest('div').removeClass('error').addClass('success');
 				}
 			});
 		}
@@ -613,8 +613,8 @@ function click_submit() {
 		//Проверка маски  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		let maskReq = $thisForm.find('.input--mask');
 		maskReq.each(function () {
-			if (!$(this).hasClass('succes')) {
-				$(this).removeClass('succes').addClass('error');
+			if (!$(this).hasClass('success')) {
+				$(this).removeClass('success').addClass('error');
 				Errorcount++;
 			}
 		})
@@ -627,15 +627,15 @@ function click_submit() {
 				let $this = $(this);
 
 				if (inputValue.length >= 0 && (inputValue.match(/.+?\@.+[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}/g) || []).length !== 1) {
-					$this.closest('div').removeClass('succes').addClass('error');
+					$this.closest('div').removeClass('success').addClass('error');
 					Errorcount++;
 				}
 				else if (inputValue == '') {
-					$this.closest('div').removeClass('succes').addClass('error');
+					$this.closest('div').removeClass('success').addClass('error');
 					Errorcount++;
 				}
 				else if (!inputValue == '' && $this.closest('div').hasClass('error') && !$this.closest('div').hasClass('error-online')) {
-					$this.closest('div').removeClass('error').addClass('succes');
+					$this.closest('div').removeClass('error').addClass('success');
 				}
 			});
 		}
@@ -689,9 +689,9 @@ function click_submit() {
 					}
 				})
 				if (checked > 0) {
-					$(this).removeClass('error error-online').addClass('succes')
+					$(this).removeClass('error error-online').addClass('success')
 				} else {
-					$(this).removeClass('succes').addClass('error')
+					$(this).removeClass('success').addClass('error')
 					Errorcount++;
 				}
 			});
@@ -703,10 +703,10 @@ function click_submit() {
 			selectReq.each(function () {
 				var sel = $(this).find('select :selected');
 				if (sel.val() === 'Not selected') {
-					sel.closest('.required--select').removeClass('succes').addClass('error');
+					sel.closest('.required--select').removeClass('success').addClass('error');
 					Errorcount++;
 				} else {
-					sel.closest('.required--select').removeClass('error').addClass('succes');
+					sel.closest('.required--select').removeClass('error').addClass('success');
 				}
 			})
 		}
@@ -717,11 +717,11 @@ function click_submit() {
 			fileReq.each(function () {
 				let file = $(this).find('input');
 				if (file.val() == '') {
-					file.closest('.required--file').removeClass('succes').addClass('error');
+					file.closest('.required--file').removeClass('success').addClass('error');
 					Errorcount++;
 				}
 				else {
-					file.closest('.required--file').removeClass('error').addClass('succes');
+					file.closest('.required--file').removeClass('error').addClass('success');
 				}
 			})
 		}
@@ -733,11 +733,11 @@ function click_submit() {
 			fileReqMultiple.each(function () {
 				let files = $(this).find('.input-file-list p');
 				if (files.length == '' || files.length > maxLength) {
-					fileReqMultiple.removeClass('succes').addClass('error');
+					fileReqMultiple.removeClass('success').addClass('error');
 					Errorcount++;
 				}
 				else {
-					fileReqMultiple.removeClass('error').addClass('succes');
+					fileReqMultiple.removeClass('error').addClass('success');
 				}
 			})
 		}
@@ -747,10 +747,10 @@ function click_submit() {
 		dataPicker.each(function () {
 			let val = dataPicker.find('input').val();
 			if (val == '') {
-				$(this).closest('required--date').removeClass('succes').addClass('error');
+				$(this).closest('required--date').removeClass('success').addClass('error');
 				Errorcount++;
 			} else if (!val == '' && $(this).closest('required--date').hasClass('error') && !$(this).closest('required--date').hasClass('error-online')) {
-				$(this).closest('required--date').removeClass('error error-online').addClass('succes');
+				$(this).closest('required--date').removeClass('error error-online').addClass('success');
 			}
 		});
 

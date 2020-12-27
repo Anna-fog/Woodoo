@@ -1,0 +1,21 @@
+.container
+    .message
+        .message__bg
+            .form
+                h2.message__title Reservation
+                .message__info SEND US A MESSAGE
+
+                input(placeholder="Your Name" name="name").message__input
+                input(placeholder="Your E-mail" name="e-mail").message__input.required--email.input
+                input(placeholder="Your Message" name="message").message__input
+
+                button.btn-form Send
+
+            .message__social
+                .message__icon
+                    +icon('facebook')
+                .message__icon
+                    +icon('twitter')
+                .message__icon
+                    +icon('instagram')
+            .message__copyright 2020 - Woodoo. All Rights Reserved

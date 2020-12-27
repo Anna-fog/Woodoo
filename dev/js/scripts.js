@@ -32,7 +32,6 @@ $(document).ready(function(){
 	// 	}
 	// });
 
-
 	//Попап инит
 	// $('.ajax-form').magnificPopup({
 	// 	type: 'ajax',
@@ -41,9 +40,32 @@ $(document).ready(function(){
 	// 	}
 	// });
 
-
+// Slider
 
 	$('.slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		speed: 1100,
+		dots: false,
+		prevArrow: false,
+		nextArrow: '<button type="button" class="slick-next"><img src="img/svg/arrow-right.svg"></button>',
+		swipeToSlide: true,
+		responsive: [{
+			breakpoint: 1181,
+			settings: {
+				slidesToShow: 3
+			}
+		}, {
+			breakpoint: 990,
+			settings: {
+				slidesToShow: 2
+			}
+		}, {
+			breakpoint: 601,
+			settings: {
+				slidesToShow: 1
+			}
+		}]
 
 	});
 
