@@ -6,8 +6,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
-    min-height: 530px;
+    min-height: toVw(530);
     padding-top: toVw(70);
+
+    @include lg-block() {
+      min-height: toVw(540);
+    }
+
+    @include md-block() {
+      min-height: toVw(660);
+    }
   }
 
   &__title {
@@ -33,35 +41,39 @@
   }
 
   &__input {
-    margin-top: toVw(15);
-    padding-bottom: toVw(5);
-    width: toVw(467);
-    height: toVw(25);
+    margin-top: 15px;
+    padding-bottom: 5px;
+    width: 467px;
+    height: 25px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.45);
     font-family: "work-sans";
     font-size: 10px;
     color: rgba(45, 54, 63, 0.45);
+
+    @include md-block() {
+      padding-bottom: 25px;
+    }
   }
 
   &__social {
     margin-top: toVw(120);
     display: flex;
     justify-content: center;
+
   }
 
   &__icon {
     margin-right: toVw(13);
     cursor: pointer;
     svg {
-      height: toVw(15);
-      width: toVw(15);
+      height: 15px;
+      width: 15px;
       transition: .3s ease-out all;
       &:hover {
         fill: #5A5A5A;
       }
     }
-
   }
 
   &__copyright {

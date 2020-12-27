@@ -3,7 +3,7 @@
   margin-left: toVw(20);
   font-family: "old-standard";
   font-weight: 400;
-  font-size: toVw(12);
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   width: 147px;
@@ -28,13 +28,13 @@
 }
 
 .btn-more {
-  width: toVw(115);
-  height: toVw(30);
+  width: 115px;
+  height: 30px;
   border: 1px solid #2D363F;
   font-family: "montserat";
   text-transform: uppercase;
-  font-size: toVw(10);
-  line-height: toVw(20);
+  font-size: 10px;
+  line-height: 20px;
   letter-spacing: 0.105em;
   font-weight: 500;
   display: flex;
@@ -53,16 +53,21 @@
 .btn-form {
   margin-top: toVw(20);
   border: 1px solid #2D363F;
-  width: toVw(97);
-  height: toVw(28);
-  font-size: toVw(10);
-  line-height: toVw(20);
+  width: 97px;
+  height: 28px;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: .3s ease-out all;
+
+  @include md-block() {
+    margin-top: toVw(35);
+  }
 
 
   &:hover {

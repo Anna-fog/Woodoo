@@ -1,11 +1,19 @@
 .ms {
   background-color: $beige;
   padding-bottom: toVw(140);
-  min-height: 607px;
+  min-height: toVw(607);
 
   background-image: url(../img/content/ms_bg.png);
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include lg-block() {
+    min-height: toVw(700);
+  }
+
+  @include md-block() {
+    min-height: toVw(900);
+  }
 
   &__upper {
     padding-top: toVw(25);
@@ -35,6 +43,10 @@
       }
     }
 
+    @include md-block() {
+      margin-left: toVw(35);
+    }
+
     &:first-child {
       &:after {
         width: 95%;
@@ -59,6 +71,14 @@
     align-items: flex-start;
     padding-left: toVw(490);
     z-index: 2;
+
+    @include lg-block() {
+      padding-left: toVw(550);
+    }
+
+    @include md-block() {
+      padding-left: toVw(700);
+    }
   }
 
   &__logo {
@@ -77,9 +97,13 @@
   &__title {
     font-family: "work-sans";
     font-weight: 100;
-    font-size: 140px;
-    line-height: 133px;
+    font-size: toVw(140);
+    line-height: toVw(133);
     text-transform: uppercase;
+
+    @include md-block() {
+      font-size: toVw(160);
+    }
   }
 
   &__subtitle {
@@ -88,6 +112,10 @@
     margin-top: toVw(25);
     letter-spacing: 0.44em;
     font-size: 16px;
+
+    @include md-block() {
+      font-size: 14px;
+    }
   }
 
 

@@ -1,29 +1,50 @@
 .results {
   background-color: $beige;
   padding-top: toVw(63);
-  height: toVw(543);
+  min-height: toVw(543);
 
   background-image: url(../img/content/results_bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
 
+  @include md-block() {
+    min-height: toVw(800);
+    padding-top: toVw(80);
+  }
+
   &__title {
-    font-size: toVw(34);
+    font-size: 34px;
     font-family: "lato";
     line-height: 41px;
     display: flex;
     justify-content: center;
     margin-right: toVw(80);
+
+    @include lg-block() {
+      margin-right: toVw(105);
+    }
+
+    @include md-block() {
+      font-size: 32px;
+      margin-right: toVw(140);
+
+    }
   }
 
   &__wrapper {
-    height: toVw(240);
+    min-height: toVw(240);
     background: rgba(186, 80, 50, 0.9);
     margin-top: toVw(31);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+    padding-top: toVw(60);
+
+    @include md-block() {
+      min-height: toVw(400);
+      padding-top: toVw(80);
+    }
   }
 
   &__item {
@@ -48,5 +69,9 @@
     font-family: "lato";
     font-size: 14px;
     line-height: 20px;
+
+    @include md-block() {
+      width: toVw(350);
+    }
   }
 }

@@ -1,8 +1,18 @@
 .benefits {
   background: linear-gradient(to bottom, $dark-beige 60%, $beige 40%);
-  height: toVw(594);
+  min-height: toVw(550);
   padding-top: toVw(80);
   position: relative;
+
+  @include lg-block() {
+    min-height: toVw(620);
+  }
+
+  @include md-block() {
+    min-height: toVw(820);
+    padding-top: toVw(100);
+  }
+
 
   &__title {
     color: $orange;
@@ -10,6 +20,10 @@
     letter-spacing: -0.01em;
     line-height: 100%;
     text-align: center;
+
+    @include md-block() {
+      font-size: 34px;
+    }
   }
 
   &__wrapper {
@@ -17,16 +31,30 @@
     justify-content: center;
     width: toVw(1028);
     position: relative;
+
+    @include md-block() {
+      width: toVw(1360);
+    }
   }
 
   &__item {
     width: toVw(326) !important;
+
+    @include md-block() {
+      width: toVw(420) !important;
+    }
   }
 
   &__img {
     width: toVw(326);
     height: toVw(235);
     overflow: hidden;
+
+    @include md-block() {
+      width: toVw(440);
+      height: auto;
+    }
+
     img {
       transition: all ease-out 0.7s;
       &:hover {
@@ -69,10 +97,14 @@
   top: toVw(-90);
   border: none;
   cursor: pointer;
-  width: toVw(54);
+  width: 54px;
   height: auto;
   transform: none;
   transition: .5s ease-out all;
+
+  @include md-block() {
+    top: toVw(-110);
+  }
 
   &:hover {
     transform: translateX(toVw(10));

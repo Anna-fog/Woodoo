@@ -22,6 +22,14 @@
     justify-content: space-between;
     width: toVw(830);
     margin: 0 auto;
+
+    @include lg-block() {
+      width: toVw(900);
+    }
+
+    @include md-block() {
+      width: toVw(1100);
+    }
   }
 
   &__descr {
@@ -30,9 +38,17 @@
     line-height: 26px;
     letter-spacing: 0.02em;
 
+    @include md-block() {
+      width: toVw(550);
+    }
+
     &_expl {
       width: toVw(568);
       margin-top: toVw(17);
+
+      @include lg-block() {
+        width: toVw(750);
+      }
     }
   }
 
@@ -42,6 +58,15 @@
     display: flex;
     justify-content: center;
     margin: toVw(45) auto 0 auto;
+
+    @include lg-block() {
+      width: toVw(900);
+      height: auto;
+    }
+
+    @include md-block() {
+      width: toVw(1100);
+    }
   }
 
   &__explanation {
@@ -50,6 +75,10 @@
     justify-content: center;
     width: toVw(568);
     margin: toVw(42) auto 0 auto;
+
+    @include lg-block() {
+      width: toVw(700);
+    }
   }
 
   &__name {
@@ -60,6 +89,5 @@
     line-height: 24px;
     font-weight: bold;
   }
-
 
 }

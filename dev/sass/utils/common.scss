@@ -49,7 +49,7 @@ img{
 	position: relative;
 
 	@include lg-block() {
-		width: 1180px;
+		width: toVw(1440);
 	}
 
 	@include md-block() {
