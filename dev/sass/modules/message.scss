@@ -22,7 +22,12 @@
     }
 
     @include sm-block() {
-      min-height: toVw(480);
+      min-height: toVw(430);
+    }
+
+    @include xs-block() {
+      min-height: 485px;
+      padding-top: 30px;
     }
   }
 
@@ -62,6 +67,10 @@
     @include md-block() {
       padding-bottom: 25px;
     }
+
+    @include xs-block() {
+      height: 40px;
+    }
   }
 
   &__social {
@@ -70,7 +79,11 @@
     justify-content: center;
 
     @include sm-block() {
-      margin-top: 80px;
+      margin-top: toVw(40);
+    }
+
+    @include xs-block() {
+      margin-top: 60px;
     }
 
   }
@@ -102,7 +115,9 @@
       content: url("../img/svg/copyright.svg");
       margin-right: toVw(5);
     }
+
+    @include sm-block() {
+      margin-top: 10px;
+    }
   }
-
-
 }

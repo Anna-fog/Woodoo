@@ -25,6 +25,10 @@
   a {
     color: $orange;
   }
+
+  @include xxs-block() {
+    margin-right: 60px;
+  }
 }
 
 .btn-more {

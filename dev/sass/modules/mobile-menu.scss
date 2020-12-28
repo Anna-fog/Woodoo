@@ -28,6 +28,10 @@
   @include sm-block() {
     margin-right: 50px;
   }
+
+  @include xxs-block() {
+    margin-right: 30px;
+  }
 }
 
 .mobile-menu {

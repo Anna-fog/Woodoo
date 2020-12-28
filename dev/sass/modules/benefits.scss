@@ -19,7 +19,11 @@
   }
 
   @include sm-block() {
-    min-height: toVw(700);
+    min-height: toVw(600);
+  }
+
+  @include xs-block() {
+    min-height: 630px;
   }
 
 
@@ -32,6 +36,10 @@
 
     @include md-block() {
       font-size: 34px;
+    }
+
+    @include xs-block() {
+      font-size: 28px;
     }
   }
 
@@ -71,6 +79,10 @@
     @include sm-block() {
       width: 500px !important;
     }
+    @include xs-block() {
+      width: 440px !important;
+    }
+
   }
 
   &__img {
@@ -89,6 +101,10 @@
 
     @include sm-block() {
       width: 500px;
+    }
+
+    @include xs-block() {
+      width: 440px;
     }
 
     img {
@@ -154,6 +170,11 @@
   @include sm-block() {
     top: toVw(-80);
     right: 60px;
+  }
+
+  @include xs-block() {
+    width: 40px;
+    top: toVw(-88);
   }
 
   &:hover {

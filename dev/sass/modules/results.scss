@@ -42,6 +42,13 @@
     @include xmd-block() {
       margin-left: toVw(200);
     }
+
+    @include xs-block() {
+      font-size: 26px;
+      margin-right: 8%;
+      line-height: 36px;
+      justify-content: flex-end;
+    }
   }
 
   &__wrapper {
@@ -61,6 +68,12 @@
     @include xmd-block() {
       min-height: toVw(300);
     }
+
+    @include xs-block() {
+      flex-direction: column;
+      padding-bottom: 40px;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -77,6 +90,11 @@
     @include sm-block() {
       margin-right: 35px;
     }
+
+    @include xs-block() {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
   }
 
   &__name {
@@ -89,6 +107,10 @@
 
     @include xmd-block() {
       max-width: 200px;
+    }
+
+    @include xs-block() {
+      max-width: 100%;
     }
 
 
@@ -109,8 +131,8 @@
       width: toVw(220);
     }
 
-    @include sm-block() {
-      width: 200px;
+    @include xs-block() {
+      width: 485px;
     }
   }
 }

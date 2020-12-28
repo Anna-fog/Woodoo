@@ -15,11 +15,15 @@
     @include xmd-block() {
       margin-left: toVw(50);
     }
+
+    @include xxs-block() {
+      margin-left: 30px;
+    }
   }
 
   &__wrapper {
     display: flex;
-    padding-left: toVw(250);
+    padding-left: toVw(200);
 
     li {
       margin-left: toVw(20);
