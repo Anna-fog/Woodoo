@@ -1,17 +1,23 @@
 .container
     .ms
-        .ms__upper
-            a(href="#").ms__logo Woodoo
-            ul.ms__menu
-                li.ms__menu-item Main
-                li.ms__menu-item About
-                li.ms__menu-item Services
-                li.ms__menu-item Photo
-                li.ms__menu-item Locations
-                li.ms__menu-item Contacts
-            .btn-ms
-                a(href="#") Book now
+        include menu
+
         .ms__heading
             h1.ms__title Infrared sauna
             h2.ms__subtitle TAKES CARE OF YOUR BODY
+
+        .overlay
+            ul.mobile-menu
+                li
+                    a(href="#").mobile-menu__item Main
+                li
+                    a(href="#").mobile-menu__item About
+                li
+                    a(href="#").mobile-menu__item Services
+                li
+                    a(href="#").mobile-menu__item Photo
+                li
+                    a(href="#").mobile-menu__item Locations
+                li
+                    a(href="#").mobile-menu__item Contacts
 

@@ -38,6 +38,10 @@
       font-size: 30px;
       margin-right: 0;
     }
+
+    @include xmd-block() {
+      margin-left: toVw(200);
+    }
   }
 
   &__wrapper {
@@ -69,6 +73,10 @@
     @include xmd-block() {
       margin-right: 70px;
     }
+
+    @include sm-block() {
+      margin-right: 35px;
+    }
   }
 
   &__name {
@@ -80,8 +88,10 @@
     width: auto;
 
     @include xmd-block() {
-      width: toVw(220);
+      max-width: 200px;
     }
+
+
   }
 
   &__descr {
@@ -97,6 +107,10 @@
 
     @include xmd-block() {
       width: toVw(220);
+    }
+
+    @include sm-block() {
+      width: 200px;
     }
   }
 }

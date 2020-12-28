@@ -2,6 +2,7 @@
   background-color: $beige;
   padding-bottom: toVw(140);
   min-height: toVw(607);
+  position: relative;
 
   background-image: url(../img/content/ms_bg.png);
   background-size: contain;
@@ -20,62 +21,8 @@
     padding-bottom: 0;
   }
 
-  &__upper {
-    padding-top: toVw(25);
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    align-items: center;
-  }
-
-  &__menu {
-    display: flex;
-    padding-left: toVw(250);
-
-    @include xmd-block() {
-      padding-left: toVw(10);
-    }
-  }
-
-  &__menu-item {
-    font-family: "old-standard";
-    font-weight: 400;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-left: toVw(20);
-    letter-spacing: 0.3em;
-    cursor: pointer;
-    &:hover {
-      &:after {
-        width: 95%;
-        transform: translateY(0);
-      }
-    }
-
-    @include md-block() {
-      margin-left: toVw(35);
-    }
-
-    @include xmd-block() {
-      margin-left: 20px;
-    }
-
-    &:first-child {
-      &:after {
-        width: 95%;
-        transform: translateY(0);
-      }
-    }
-
-    &:after {
-      display: block;
-      content: "";
-      width: 0;
-      height: 1px;
-      background-color: $orange;
-      transform: translateY(7px);
-      transition: all .3s ease-out;
-    }
+  @include sm-block() {
+    min-height: 437px;
   }
 
   &__heading {
@@ -97,20 +44,12 @@
     @include xmd-block() {
       padding-left: 450px;
     }
-  }
 
-  &__logo {
-    margin-left: toVw(90);
-    font-family: "raleway";
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 18px;
-
-    @include xmd-block() {
-      margin-left: toVw(50);
+    @include sm-block() {
+      padding-left: 300px;
+      margin-top: toVw(70);
     }
   }
-
 
   &__title {
     font-family: "work-sans";
@@ -138,6 +77,11 @@
 
     @include md-block() {
       font-size: 14px;
+    }
+
+    @include sm-block() {
+      font-size: 14px;
+      margin-top: toVw(10);
     }
   }
 

@@ -58,7 +58,11 @@ img{
 
 	@include xmd-block() {
 		width: 990px;
-		overflow: hidden;
+		//overflow: hidden;
+	}
+
+	@include sm-block() {
+		width: 800px;
 	}
 
 

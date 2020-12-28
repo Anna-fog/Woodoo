@@ -40,6 +40,7 @@ $(document).ready(function(){
 	// 	}
 	// });
 
+
 // Slider
 
 	$('.slider').slick({
@@ -53,21 +54,32 @@ $(document).ready(function(){
 		responsive: [{
 			breakpoint: 1181,
 			settings: {
-				slidesToShow: 3
-			}
-		}, {
-			breakpoint: 1181,
-			settings: {
 				slidesToShow: 2
 			}
 		}, {
-			breakpoint: 601,
+			breakpoint: 991,
 			settings: {
 				slidesToShow: 1
 			}
 		}]
 
 	});
+
+
+
+	// Burger-menu
+
+	const burger = document.querySelector('.burger');
+	const span = burger.querySelectorAll('span');
+	const overlay = document.querySelector('.overlay');
+
+	burger.addEventListener('click', function() {
+		overlay.classList.toggle('active-overlay');
+		burger.classList.toggle('active-burger');
+		span.forEach(item => item.classList.toggle('active-span'));
+	});
+
+
 
 
 	if($('.styler').length){

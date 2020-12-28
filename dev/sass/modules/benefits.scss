@@ -13,10 +13,13 @@
     padding-top: toVw(100);
   }
 
-  @include md-block() {
+  @include xmd-block() {
     min-height: toVw(650);
     padding-top: toVw(60);
+  }
 
+  @include sm-block() {
+    min-height: toVw(700);
   }
 
 
@@ -45,6 +48,10 @@
     @include xmd-block() {
       width: toVw(910);
     }
+
+    @include sm-block() {
+      width: auto;
+    }
   }
 
   &__item {
@@ -58,6 +65,11 @@
 
     @include xmd-block() {
       margin-left: 20px;
+      width: toVw(420) !important;
+    }
+
+    @include sm-block() {
+      width: 500px !important;
     }
   }
 
@@ -71,8 +83,12 @@
       height: auto;
     }
 
-    @include md-block() {
+    @include xmd-block() {
       width: toVw(420);
+    }
+
+    @include sm-block() {
+      width: 500px;
     }
 
     img {
@@ -105,6 +121,11 @@
 
 .slick-slide {
   width: auto;
+
+  @include sm-block() {
+    display: flex !important;
+    justify-content: center;
+  }
 }
 
 .slider {
@@ -128,6 +149,11 @@
 
   @include md-block() {
     top: toVw(-90);
+  }
+
+  @include sm-block() {
+    top: toVw(-80);
+    right: 60px;
   }
 
   &:hover {

@@ -20,6 +20,10 @@
     @include xmd-block() {
       min-height: toVw(540);
     }
+
+    @include sm-block() {
+      min-height: toVw(480);
+    }
   }
 
   &__title {
@@ -64,6 +68,10 @@
     margin-top: toVw(120);
     display: flex;
     justify-content: center;
+
+    @include sm-block() {
+      margin-top: 80px;
+    }
 
   }
 

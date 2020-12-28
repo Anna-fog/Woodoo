@@ -34,6 +34,10 @@
     @include xmd-block() {
       width: 910px;
     }
+
+    @include sm-block() {
+      width: 760px;
+    }
   }
 
   &__descr {
@@ -44,6 +48,10 @@
 
     @include md-block() {
       width: toVw(550);
+    }
+
+    @include sm-block() {
+      width: 400px;
     }
 
     &_expl {
@@ -76,8 +84,12 @@
       width: toVw(1100);
     }
 
-    @include md-block() {
+    @include xmd-block() {
       width: 910px;
+    }
+
+    @include sm-block() {
+      width: 760px;
     }
   }
 
