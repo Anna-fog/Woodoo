@@ -32,6 +32,11 @@
   @include xxs-block() {
     margin-right: 30px;
   }
+
+  @include xxxs-block() {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 .mobile-menu {

@@ -73,11 +73,13 @@ $(document).ready(function(){
 	const span = burger.querySelectorAll('span');
 	const overlay = document.querySelector('.overlay');
 
-	burger.addEventListener('click', function() {
+	const closeMobileMenu = function() {
 		overlay.classList.toggle('active-overlay');
 		burger.classList.toggle('active-burger');
 		span.forEach(item => item.classList.toggle('active-span'));
-	});
+	}
+
+	burger.addEventListener('click', closeMobileMenu);
 
 
 

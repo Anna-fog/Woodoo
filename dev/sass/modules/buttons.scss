@@ -20,14 +20,22 @@
     a {
       color: $beige;
     }
+
+    @include xs-block() {
+      background-color: transparent;
+      border: 1px solid $orange;
+      a {
+        color: $orange;
+      }
+    }
   }
 
   a {
     color: $orange;
   }
 
-  @include xxs-block() {
-    margin-right: 60px;
+  @include xxxs-block() {
+    display: none;
   }
 }
 
@@ -51,6 +59,11 @@
     border: 1px solid $orange;
     color: $orange;
 
+    @include xs-block() {
+      border: 1px solid #2D363F;
+      color: $black;
+
+    }
   }
 }
 
@@ -73,11 +86,22 @@
     margin-top: toVw(35);
   }
 
+  @include xxxs-block() {
+    order: 2;
+  }
+
 
   &:hover {
     border: 1px solid $orange;
     background-color: $orange;
     color: $beige;
+
+    @include xs-block() {
+      border: 1px solid #2D363F;
+      background-color: transparent;
+      color: $black;
+
+    }
 
   }
 

@@ -73,6 +73,10 @@ img{
 		max-width: 600px;
 	}
 
+	@include xxxs-block() {
+		max-width: 450px;
+	}
+
 
 }
 

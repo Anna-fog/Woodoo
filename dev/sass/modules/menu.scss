@@ -4,6 +4,11 @@
   justify-content: space-between;
   z-index: 2;
   align-items: center;
+  //position: relative;
+
+  @include xxxs-block() {
+    align-items: flex-start;
+  }
 
   &__logo {
     margin-left: toVw(90);
@@ -18,6 +23,10 @@
 
     @include xxs-block() {
       margin-left: 30px;
+    }
+
+    @include xxxs-block() {
+      margin-left: 20px;
     }
   }
 

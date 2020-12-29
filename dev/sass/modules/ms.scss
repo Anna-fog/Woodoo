@@ -67,6 +67,10 @@
       padding-left: 140px;
       margin-top: 40px;
     }
+
+    @include xxxs-block() {
+      padding-left: 50px;
+    }
   }
 
   &__title {

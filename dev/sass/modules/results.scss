@@ -17,6 +17,11 @@
     min-height: toVw(600);
   }
 
+  @include xxs-block() {
+    padding-top: 50px;
+    min-height: 700px;
+  }
+
   &__title {
     font-size: 34px;
     font-family: "lato";
@@ -49,6 +54,17 @@
       line-height: 36px;
       justify-content: flex-end;
     }
+
+    @include xxs-block() {
+      width: 420px;
+      margin: 35px auto 0 auto;
+      justify-content: flex-start;
+      color: $beige;
+    }
+
+    @include xxxs-block() {
+      width: 300px;
+    }
   }
 
   &__wrapper {
@@ -74,6 +90,11 @@
       padding-bottom: 40px;
       align-items: center;
     }
+
+    @include xxs-block() {
+      padding-top: 35px;
+      padding-bottom: 0;
+    }
   }
 
   &__item {
@@ -94,6 +115,14 @@
     @include xs-block() {
       margin-right: 0;
       margin-bottom: 40px;
+    }
+
+    @include xxs-block() {
+      width: 420px;
+    }
+
+    @include xxxs-block() {
+      width: 300px;
     }
   }
 
@@ -133,6 +162,14 @@
 
     @include xs-block() {
       width: 485px;
+    }
+
+    @include xxs-block() {
+      width: 420px;
+    }
+    @include xxxs-block() {
+      width: 300px;
+      margin-top: 15px;
     }
   }
 }

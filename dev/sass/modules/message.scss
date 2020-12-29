@@ -28,6 +28,15 @@
     @include xs-block() {
       min-height: 485px;
       padding-top: 30px;
+      background-origin: content-box;
+    }
+
+    @include xxs-block() {
+      min-height: 495px;
+    }
+
+    @include xxxs-block() {
+      min-height: 500px;
     }
   }
 
@@ -51,6 +60,14 @@
 
   .form-wrapper {
     margin-left: toVw(130);
+
+    @include xs-block() {
+      margin-left: toVw(130);
+    }
+
+    @include xxs-block() {
+      margin-left: 20px;
+    }
   }
 
   &__input {
@@ -71,6 +88,16 @@
     @include xs-block() {
       height: 40px;
     }
+
+    @include xxs-block() {
+      width: 420px;
+    }
+
+    @include xxxs-block() {
+      width: 280px;
+      height: 35px;
+      font-size: 12px;
+    }
   }
 
   &__social {
@@ -86,17 +113,30 @@
       margin-top: 60px;
     }
 
+    @include xs-block() {
+      margin-top: toVw(30);
+    }
+
+    @include xxxs-block() {
+      margin-top: 45px;
+    }
+
   }
 
   &__icon {
     margin-right: toVw(13);
     cursor: pointer;
+    fill: $black;
     svg {
       height: 15px;
       width: 15px;
       transition: .3s ease-out all;
       &:hover {
         fill: #5A5A5A;
+
+        @include xs-block() {
+          fill: $black;
+        }
       }
     }
   }

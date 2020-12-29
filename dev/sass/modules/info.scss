@@ -52,6 +52,14 @@
       width: 580px;
       flex-direction: column;
     }
+
+    @include xxs-block() {
+      width: 420px;
+    }
+
+    @include xxxs-block() {
+      width: 300px;
+    }
   }
 
   &__descr {
@@ -73,6 +81,10 @@
       margin-top: 35px;
     }
 
+    @include xxs-block() {
+      width: auto;
+    }
+
     &_expl {
       width: toVw(568);
       margin-top: toVw(17);
@@ -83,6 +95,10 @@
 
       @include xmd-block() {
         width: toVw(600);
+      }
+
+      @include xxs-block() {
+        width: auto;
       }
     }
   }
@@ -114,6 +130,14 @@
     @include xs-block() {
       width: 580px;
     }
+
+    @include xxs-block() {
+      width: 420px;
+    }
+
+    @include xxxs-block() {
+      width: 300px;
+    }
   }
 
   &__explanation {
@@ -129,6 +153,14 @@
 
     @include md-block() {
       width: toVw(600);
+    }
+
+    @include xxs-block() {
+      width: 420px;
+    }
+
+    @include xxxs-block() {
+      width: 300px;
     }
   }
 

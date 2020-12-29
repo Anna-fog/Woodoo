@@ -26,6 +26,10 @@
     min-height: 630px;
   }
 
+  @include xxxs-block() {
+    min-height: 500px;
+  }
+
 
   &__title {
     color: $orange;
@@ -40,6 +44,10 @@
 
     @include xs-block() {
       font-size: 28px;
+    }
+
+    @include xxxs-block() {
+      font-size: 24px;
     }
   }
 
@@ -79,8 +87,14 @@
     @include sm-block() {
       width: 500px !important;
     }
+
     @include xs-block() {
       width: 440px !important;
+    }
+
+    @include xxxs-block() {
+      width: 300px !important;
+      margin-left: 0;
     }
 
   }
@@ -105,12 +119,25 @@
 
     @include xs-block() {
       width: 440px;
+
     }
+    @include xxs-block() {
+      width: 420px;
+    }
+
+    @include xxxs-block() {
+      width: 300px;
+    }
+
 
     img {
       transition: all ease-out 0.7s;
       &:hover {
         transform: scale(1.1);
+
+        @include xs-block() {
+          transform: none;
+        }
       }
     }
   }
@@ -142,10 +169,15 @@
     display: flex !important;
     justify-content: center;
   }
+
 }
 
 .slider {
   margin: toVw(60) auto 0 auto !important;
+
+  @include xxs-block() {
+    margin-top: 45px !important;
+  }
 }
 
 .slick-next{
@@ -177,8 +209,21 @@
     top: toVw(-88);
   }
 
+  @include xxs-block() {
+    top: 325px;
+    right: toVw(20);
+  }
+
+  @include xxxs-block() {
+    top: 300px;
+  }
+
   &:hover {
     transform: translateX(toVw(10));
+
+    @include xs-block() {
+      transform: none;
+    }
   }
   &:before {
     content: '';
