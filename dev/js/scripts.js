@@ -74,25 +74,55 @@ $(document).ready(function(){
 	const overlay = document.querySelector('.overlay');
 	const mobileMenu = document.querySelector('.mobile-menu');
 
-	const closeMobileMenu = function() {
+
+	const toggleMobileMenu = function() {
 		overlay.classList.toggle('active-overlay');
 		burger.classList.toggle('active-burger');
 		span.forEach(item => item.classList.toggle('active-span'));
-	}
+	};
 
-	burger.addEventListener('click', closeMobileMenu);
-	mobileMenu.addEventListener('click', function (e) {
-		let listItem = e.target.closest('a');
-		if (e.target !== listItem) return;
-		closeMobileMenu();
+		burger.addEventListener('click', function () {
+		toggleMobileMenu("add");
+	});
+
+	const menuItems = mobileMenu.querySelectorAll('li a');
+
+	menuItems.forEach(item => {
+		item.addEventListener('click', toggleMobileMenu);
 	});
 
 	document.addEventListener('keyup', function (e) {
-		const keyName = e.code;
-		if(overlay.classList.contains('active-overlay') && keyName === 'Escape') {
-			closeMobileMenu();
+		if(overlay.classList.contains('active-overlay') && e.code === 'Escape') {
+			toggleMobileMenu();
 		}
 	});
+
+
+
+	// Pageup
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1200) {
+			$('.pageup').fadeIn("slow");
+		} else {
+			$('.pageup').fadeOut("slow");
+		}
+	});
+
+	// Smooth scroll
+
+	$('a[href^="#"]').on('click', function() {
+		let href = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(href).offset().top
+		}, 400);
+		return false;
+	});
+
+	// Wow animation
+
+	// new WOW().init();
+
 
 
 

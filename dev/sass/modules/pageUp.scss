@@ -1,0 +1,25 @@
+.pageup {
+  width: 41px;
+  height: 35px;
+  background-color: $orange;
+  bottom: 40px;
+  right: 40px;
+  position: fixed;
+  display: none;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include xxxs-block() {
+    bottom: 25px;
+    right: 25px;
+  }
+}
+
+.pageup-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

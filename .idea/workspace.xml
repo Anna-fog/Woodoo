@@ -11,11 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ed854d0-796b-441f-9244-6f054261867d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/img/svg/arrow-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/pug/modules/pageUp.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/sass/modules/pageUp.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/modules/menu.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/menu.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/pages/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/modules/message.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/message.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/pug/modules/ms.pug" beforeDir="false" afterPath="$PROJECT_DIR$/dev/pug/modules/ms.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/sass/modules/mobile-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/modules/mobile-menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/sass/modules/ms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/sass/modules/ms.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608904920413</updated>
-      <workItem from="1608904924153" duration="92673000" />
+      <workItem from="1608904924153" duration="98248000" />
     </task>
     <servers />
   </component>
