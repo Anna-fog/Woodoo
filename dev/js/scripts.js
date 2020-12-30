@@ -72,6 +72,7 @@ $(document).ready(function(){
 	const burger = document.querySelector('.burger');
 	const span = burger.querySelectorAll('span');
 	const overlay = document.querySelector('.overlay');
+	const mobileMenu = document.querySelector('.mobile-menu');
 
 	const closeMobileMenu = function() {
 		overlay.classList.toggle('active-overlay');
@@ -80,6 +81,20 @@ $(document).ready(function(){
 	}
 
 	burger.addEventListener('click', closeMobileMenu);
+	mobileMenu.addEventListener('click', function (e) {
+		let listItem = e.target.closest('a');
+		if (e.target !== listItem) return;
+		closeMobileMenu();
+	});
+
+	document.addEventListener('keyup', function (e) {
+		const keyName = e.code;
+		if(overlay.classList.contains('active-overlay') && keyName === 'Escape') {
+			closeMobileMenu();
+		}
+	});
+
+
 
 
 
