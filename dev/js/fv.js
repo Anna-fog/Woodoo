@@ -565,6 +565,7 @@ function click_submit() {
 			$thisForm = $this.closest('form'),
 			Errorcount = 0;
 
+
 		// Проверка полей с паролем
 		let passwordRequired = $thisForm.find('.required--password'),
 			passwordFirst = passwordRequired.find('.password-first'),
