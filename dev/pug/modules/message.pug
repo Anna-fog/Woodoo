@@ -1,27 +1,28 @@
 .container
-    .message
-        .message__bg
-            .form-wrapper
-                h2.message__title Reservation
-                .message__info SEND US A MESSAGE
+  .message
+    .message__bg
+      .form-wrapper
+        h2.message__title Reservation
+        .message__info SEND US A MESSAGE
 
-                form.form-reservation
-                    .required--input.message__input
-                        input(placeholder="Your Name" type="text")
-                    .required--email.required--input.message__input
-                        input(placeholder="Your E-mail" type="email")
-                    .required--input.message__input
-                        input(placeholder="Your Message" type="text")
+        form.form-reservation
+          .required--input.message__input
+            input(placeholder="Your Name" type="text")
+          .required--email.required--input.message__input
+            input(placeholder="Your E-mail" type="email")
+          .required--input.message__input
+            input(placeholder="Your Message" type="text")
 
-                    button.btn-form.required--sbmt Send
+          button.btn-form.required--sbmt Send
 
-            include pageUp
+      include pageUp
 
-            .message__social
-                .message__icon
-                    +icon('facebook')
-                .message__icon
-                    +icon('twitter')
-                .message__icon
-                    +icon('instagram')
-            .message__copyright 2020 - Woodoo. All Rights Reserved
+      .message__social
+        .message__icon
+          +icon('facebook')
+        .message__icon
+          +icon('twitter')
+        .message__icon
+          +icon('instagram')
+      .message__copyright Woodoo. All Rights Reserved  ©
+        span
